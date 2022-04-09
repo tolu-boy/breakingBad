@@ -16,7 +16,7 @@ const CharacterGrid = ({
   ) : (
     <div className="characters">
       <Row>
-        {items.map((item: any, i: number) => (
+        {items && items.map((item: any, i: number) => (
           <Col key={i} md={6} sm={12} xs={24} className="card-space">
             <Card
               hoverable
